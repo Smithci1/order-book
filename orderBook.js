@@ -8,7 +8,10 @@ const partOrder
 = (array) => {
 // i will create a for loop,
 // this will loop the orderbook
-  for (let o = 0; o < array.length; i++) {
+  for (let order = 0;
+order < array.length;
+order++) {
+    
 
   }
 
