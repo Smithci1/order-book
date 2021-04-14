@@ -2,6 +2,8 @@
 //  sotred orders and incoming orders
 let storedOrders = existingBook.length
 let incomingOrders = incomingOrder.length
+let buyPrice = existingBook.price
+let buyQuanity = existingBook.quantity
 // i will create a calculation function,
 //  for parcially fullfilled orders
 const partOrder
@@ -11,7 +13,7 @@ const partOrder
   for (let order = 0;
 order < array.length;
 order++) {
-    
+ if(incomingOrders.)   
 
   }
 
