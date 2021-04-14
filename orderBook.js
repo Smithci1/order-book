@@ -1,13 +1,16 @@
-//identify
-//outside of the object I will attach all identities from the test/readme to my object array
+// outside of my functions I will define,
+//  sotred orders and incoming orders
 let storedOrders = existingBook.length
 let incomingOrders = incomingOrder.length
-
-//i will create a calculation function for parcially fullfilled orders
+// i will create a calculation function,
+//  for parcially fullfilled orders
 const partOrder
-= (orders) => {
-if ()
-}
+= (array) => {
+// i will create a for loop,
+// this will loop the orderbook
+  for (let o = 0; o < array.length; i++) {
+
+  }
 
 //i will want to use push to add orders to the end of the array
 //i will no longer need to make an object.
