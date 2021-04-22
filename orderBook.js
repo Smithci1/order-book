@@ -2,12 +2,23 @@
  //with incomingorder, existingorder
 
  const reconsileOrder = (existingBook,incomingOrder) => {
-   //pushes neorder to array
-     existingBook = []
-     existingBook.push(incomingOrder) 
-     return existingBook
-                       
- }
+  //  existingBook = []
+  //  if (existingBook.push(incomingOrder)){ 
+     
+  //  }
+  // existingBook = existingBook.push(incomingOrder)
+  for(let i = 0; i < existingBook.length; i++)
+       if (existingBook === [])
+       existingBook.push(incomingOrder) || 
+         (existingBook[i].type !== 'buy' &&
+           incomingOrder.type   === 'sell')
+             existingBook.push(incomingOrder)  
+             return existingBook
+            }
+    
+    
+ 
+
 
 
 
