@@ -18,13 +18,13 @@ const reconcileOrder = (existingBook, incomingOrder) => {
   for (let i = 0; i< existingBook.length; i++){
     if(orderMatch(existingBook[i], incomingOrder)&&
                   existingBook[i].quantity === incomingOrder.quantity){
-                    return existingBook.slice(0, i).concat(existingBook[i])
-                           .filter(worth => worth.quantity)
+                    return existingBook.slice(0, i).concat(existingBook[i + 1])
+                    .filter(worth => worth.quantity)
                   }else if (orderMatch(existingBook[i], incomingOrder) &&
                             existingBook[i].quantity > incomingOrder.quantity){
                               existingBook[i.quantity] - incomingOrder.quantity
                               return existingBook.slice(0, i).concat(existingBook[i]
-                                      .concat([existingBook[i]]).filter(worth => worth.quantity))                            
+                                .concat([existingBook[i + 1]]).filter(worth => worth.quantity))                            
 
    }else if (orderMatch(existingBook[i], incomingOrder) &&
     existingBook[i].quantity < incomingOrder.quantity){
