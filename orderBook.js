@@ -15,7 +15,13 @@ const orderMatch =(existingOrder, incomingOrder) =>
  incomingOrder.price 
 const reconcileOrder = (existingBook, incomingOrder) => {
   //i will loop through book
-  for (let i = 0; i< existingBook.length; i++){}
+  for (let i = 0; i< existingBook.length; i++){
+    if(orderMatch(existingBook[i], incomingOrder)&&
+                  existingBook[i].quantity === incomingOrder.quantity){
+                    return existingBook.slice(0, i).concat(existingBook[0 + 1])
+                           .filter(worth => worth.quantity)
+                  }
+  }
 
 }
 
