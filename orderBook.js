@@ -14,7 +14,8 @@ const orderMatch =(existingOrder, incomingOrder) =>
  existingOrder.price >= 
  incomingOrder.price 
 const reconcileOrder = (existingBook, incomingOrder) => {
-  
+  //i will loop through book
+  for (let i = 0; i< existingBook.length; i++){}
 
 }
 
