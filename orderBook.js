@@ -1,21 +1,39 @@
- //create reconsile function
- //with incomingorder, existingorder
-
- const reconsileOrder = (existingBook,incomingOrder) => {
+// const orderMatch = () => {
+//   for( let i = 0;
+//     i < existingBook.length;
+//     i++)
+// existingBook.shift(existingBook[i].type !== 
+//    incomingOrder.type &&
+//    existingBook[i].quantity.price === 
+//    incomingOrder.quantity.price)
   
-  for(let i = 0; i < existingBook.length; i++)
-  /* if the book is empty then input any incoming order,
-     if the book is not empyty compare the order type 
-     of the incoming order with all the orders in book 
-     and see if there is a deal to be made.
-  */
-       if (existingBook === [])
+// }
+
+const pusher = (existingBook, incomingOrder) => {
+ for (let i = 0;
+ i < existingBook.length;
+ i++)
+      if (existingBook === [])
        existingBook.push(incomingOrder) || 
-         (existingBook[i].type !== 'buy' &&
-           incomingOrder.type   === 'sell')
-             existingBook.push(incomingOrder)  
-             return existingBook
-            }
+         (existingBook[i].type !== incomingOrder.type)
+          existingBook.push(incomingOrder) }
+ const reconsileOrder = (existingBook,incomingOrder) => {
+      pusher(existingBook,incomingOrder)   
+          // (existingBook.filter(deal => 
+          //     deal.type !== 
+          //     incomingOrder.type) 
+          return existingBook
+
+            
+           
+            
+           
+          
+            
+         
+          
+                 
+   }
     
     
  
